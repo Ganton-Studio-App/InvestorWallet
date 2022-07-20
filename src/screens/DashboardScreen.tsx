@@ -1,12 +1,8 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
 import { connect } from 'react-redux';
 
-import { signIn } from '@actions';
-
-import AuthForm from '../components/AuthForm';
-
-const LoginScreen = () => {
+const DashboardScreen = () => {
 	const { container } = styles;
 	return (
 		<ScrollView
@@ -14,7 +10,7 @@ const LoginScreen = () => {
 			contentContainerStyle={container}
 			showsVerticalScrollIndicator={false}
 		>
-			<AuthForm variant="register" onSubmit={() => console.log('submit')} />
+			<Text>test</Text>
 		</ScrollView>
 	);
 };
@@ -31,4 +27,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default connect(mapStateToProps, { signIn })(LoginScreen);
+export default connect(mapStateToProps, { signIn })(DashboardScreen);

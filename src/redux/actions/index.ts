@@ -1,2 +1,2 @@
-import {signIn} from './authActions';
-export {signIn};
+import { signIn } from './authActions';
+export { signIn };
