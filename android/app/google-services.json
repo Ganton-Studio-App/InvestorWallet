@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "237808191832",
+    "project_id": "investorwallet-8e476",
+    "storage_bucket": "investorwallet-8e476.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237808191832:android:c793f39c743e2cdc1fbd2d",
+        "android_client_info": {
+          "package_name": "com.investorwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237808191832-umjc5lsdq5rmo8do0glpcmlublndd26v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpaeAZEItms__UrVUIbS8Z_NgWZwpO_Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237808191832-umjc5lsdq5rmo8do0glpcmlublndd26v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

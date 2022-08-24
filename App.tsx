@@ -5,11 +5,11 @@ import AppNavigator from './src/navigation/AppNavigator';
 import { store } from './src/redux/store';
 
 const App = () => {
-	return (
-		<Provider store={store}>
-			<AppNavigator />
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <AppNavigator />
+    </Provider>
+  );
 };
 
 export default App;

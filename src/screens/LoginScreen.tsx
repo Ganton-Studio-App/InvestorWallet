@@ -1,34 +1,39 @@
+import { signIn } from '@actions';
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 
-import { signIn } from '@actions';
-
 import AuthForm from '../components/AuthForm';
 
-const LoginScreen = () => {
-	const { container } = styles;
-	return (
-		<ScrollView
-			style={container}
-			contentContainerStyle={container}
-			showsVerticalScrollIndicator={false}
-		>
-			<AuthForm variant="register" onSubmit={() => console.log('submit')} />
-		</ScrollView>
-	);
+const LoginScreen = (props) => {
+  const { container } = styles;
+  const { signIn } = props;
+  return (
+    <ScrollView
+      style={container}
+      contentContainerStyle={container}
+      showsVerticalScrollIndicator={false}>
+      <AuthForm
+        variant="register"
+        onSubmit={() => {
+          console.log('submit2');
+          signIn();
+        }}
+      />
+    </ScrollView>
+  );
 };
 
 const mapStateToProps = (state: { auth: { pending: any; token: any } }) => ({
-	pending: state.auth.pending,
+  pending: state.auth.pending,
 
-	token: state.auth.token,
+  token: state.auth.token,
 });
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: 'white',
-	},
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
 });
-
+// export default LoginScreen;
 export default connect(mapStateToProps, { signIn })(LoginScreen);
